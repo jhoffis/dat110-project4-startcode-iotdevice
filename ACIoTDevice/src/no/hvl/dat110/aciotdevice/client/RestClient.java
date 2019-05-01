@@ -7,6 +7,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
+import com.google.gson.Gson;
+
 public class RestClient {
 
 	public RestClient() {
@@ -64,10 +66,10 @@ public class RestClient {
 				}
 
 			}
-
-			System.out.println("BODY:");
-			System.out.println(jsonresponse.toString());
-
+			Gson gson = new Gson();
+			
+			code = gson.fromJson(jsonresponse.toString(), AccessCode.class);
+			
 			scan.close();
 
 		} catch (IOException ex) {
