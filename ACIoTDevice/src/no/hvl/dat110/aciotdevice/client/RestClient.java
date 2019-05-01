@@ -3,7 +3,6 @@ package no.hvl.dat110.aciotdevice.client;
 public class RestClient {
 
 	public RestClient() {
-		// TODO Auto-generated constructor stub
 	}
 
 	private static String logpath = "/accessdevice/log";
