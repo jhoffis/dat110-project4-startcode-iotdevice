@@ -18,7 +18,7 @@ public class RestClient {
 
 	public void doPostAccessEntry(String message) {
 
-		// TODO: implement a HTTP POST on the service to post the message
+		// implement a HTTP POST on the service to post the message
 		try (Socket s = new Socket(Configuration.host, Configuration.port)) {
 			
 			
